@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beauty Care Bootstrap Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md py-3">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="https://img.icons8.com/color/48/spa.png" alt="Logo" height="40" class="me-2">
+        <span>Her-Glow</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-md-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+              <li><a class="dropdown-item" href="cream.html">Most Demanding</a></li>
+              <li><a class="dropdown-item" href="organic products.html">Organic Products</a></li>
+              <li><hr class="dropdown-divider"></li>
+              
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact .html">Contact</a>
+          </li>
+          <li class="nav-item ms-md-3 mt-2 mt-md-0">
+           
+              <button type="button" class="btn btn-login fw-light" data-bs-toggle="modal" data-bs-target="#loginModal">
+                Login
+              </button>
+            
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Carousel -->
+  <div id="beautyCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="e picture/Shop-All-Static-Web_1920x750_b3c97cbd-cbe3-4fd3-b447-fd25adb86099.webp" class="d-block w-100" alt="Beauty Care" />
+      </div>
+      <div class="carousel-item">
+        <img src="e picture/Toner-Banner-Web.webp" class="d-block w-100" alt="Skincare" />
+      </div>
+      <div class="carousel-item">
+        <img src="e picture/retinlol_web_home_banner.webp" class="d-block w-100" alt="Glowing Skin" />
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#beautyCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#beautyCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Services -->
+  <section id="services" class="py-5">
+    <div class="container text-center">
+      <h2 class="section-title mb-4">Our Services</h2>
+      <div data-aos="zoom-in" class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+            <i class="fas fa-spa fa-2x mb-3"></i>
+            <h5 class="card-title"><a href="cream.html">Most Demanding</a></h5>
+            <p class="card-text">Revitalize your skin with our demanding products.</p>
+          </div>
+        </div>
+        <div data-aos="zoom-in" class="col-md-4">
+          <div class="card p-4 h-100">
+            <i class="fas fa-hand-holding-water fa-2x mb-3"></i>
+            <h5 class="card-title">Massages</h5>
+            <p class="card-text">Relax and unwind with therapeutic body massages.</p>
+          </div>
+        </div>
+        <div data-aos="zoom-in" class="col-md-4">
+          <div class="card p-4 h-100">
+            <i class="fas fa-leaf fa-2x mb-3"></i>
+            <h5 class="card-title"><a href="organic products.html">Organic Products</a></h5>
+            <p class="card-text">Nature-based skincare for a healthy, glowing complexion.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <div class="reviews-section">
+    <h2>What Our Customers Say</h2>
+
+    <div class="review">
+      <img src="e picture/1 - Copy.jpg" alt="Sophia L." />
+      <div class="reviewer-name">Sophia L.</div>
+      <div class="reviewer-rating">★★★★★</div>
+      <div class="review-text">
+        "Absolutely love the skincare products! My skin feels so much healthier and glowing. Highly recommend!"
+      </div>
+    </div>
+
+    <div class="review">
+      <img src="e picture/2.jpg" alt="Emma W." />
+      <div class="reviewer-name">Emma W.</div>
+      <div class="reviewer-rating">★★★★☆</div>
+      <div class="review-text">
+        "Great quality and fast delivery. The face serum has made a noticeable difference in my skin texture."
+      </div>
+    </div>
+
+    <div class="review">
+      <img src="e picture/3.jpg" alt="Olivia R." />
+      <div class="reviewer-name">Olivia R.</div>
+      <div class="reviewer-rating">★★★★★</div>
+      <div class="review-text">
+        "Fantastic customer service and amazing products. I’ve found my go-to beauty care brand!"
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-2">&copy; 2025 Her-Glow. All rights reserved.</p>
+      <div class="footer-icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+      </div>
+    </div>
+  </footer>
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form action="" method="post">
+        <h2 id="loginModalLabel">Become a Part of Her Glow</h2>
+
+        <div class="mb-3">
+          <label for="username">Enter Username</label>
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" id="username" required placeholder="Ali Pervez" >
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email">Enter Your E-mail</label>
+          <input type="email" class="form-control" id="email"  required placeholder="alipervez2007@gmail.com" >
+        </div>
+        <input type="submit" class="btn btn-login" value="Login">
+      </form>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<script>
+      const icons = document.querySelectorAll('.footer-icons i');
+    icons.forEach(icon => {
+      icon.addEventListener('mouseover', () => {
+        icon.style.color = '#000';
+      });
+      icon.addEventListener('mouseout', () => {
+        icon.style.color = 'white';
+      });
+    });
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</html>
