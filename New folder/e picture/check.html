@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Who's HER – HER Beauty</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fff8f5;
+      color: #333;
+    }
+
+    .banner img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4vw 3vw;
+      margin: 2vw auto;
+      max-width: 1200px;
+      background: #fff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .text-content {
+      flex: 1 1 50%;
+      padding: 2vw;
+    }
+
+    .image-content {
+      flex: 1 1 50%;
+      padding: 2vw;
+      text-align: center;
+    }
+
+    .image-content img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    h1, h2 {
+      color: #c9497e;
+      font-size: clamp(1.5rem, 3vw, 3rem);
+      font-weight: 600;
+    }
+
+    p {
+      font-size: clamp(1rem, 1.2vw, 1.5rem);
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+        text-align: center;
+        padding: 5vw 3vw;
+      }
+
+      .text-content,
+      .image-content {
+        flex: 1 1 100%;
+        padding: 2vw 0;
+      }
+
+      .image-content img {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    <img src="https://joinherbeauty.com/cdn/shop/files/her-story-banner.jpg?v=1675933642&width=2000" alt="HER Beauty Banner" />
+  </div>
+
+  <div class="section">
+    <div class="text-content">
+      <h2>Meet the Founders</h2>
+      <p>Two women, from two different generations, with two separate insights, came together for one mission — to provide a better beauty standard and make Pakistani women feel <strong>enough</strong>.</p>
+      <p>We pledged to create a space for women to celebrate themselves just as they are. Made by Her, for Her.</p>
+    </div>
+    <div class="image-content">
+      <img src="https://joinherbeauty.com/cdn/shop/files/founders-yellow-final.png?v=1693374277&width=1070" alt="Founders" />
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

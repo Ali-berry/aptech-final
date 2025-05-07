@@ -1,0 +1,210 @@
+body {
+    background-color: #ffe4e6;
+    font-family: 'Poppins', sans-serif;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-brand span {
+    color: #ec4899;
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    font-weight: bold;
+  }
+
+  .nav-link {
+    color: #555 !important;
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  .nav-link:hover {
+    color: #ec4899 !important;
+  }
+
+  .book-btn {
+    background-color: #ec4899;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    transition: background 0.3s;
+  }
+
+  .book-btn:hover {
+    background-color: #ea3486;
+    color: white;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .dropdown-menu {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .card-title a, .section-title {
+    color: #ff69b4;
+    text-decoration: none;
+  }
+  footer {
+    background-color: #ff69b4;
+    color: white;
+    padding: 20px 0;
+  }
+  .footer-icons i {
+    margin: 0 10px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  .footer-icons i:hover {
+    transform: scale(1.2);
+  }
+  .btn {
+    border: none;
+    border-radius: 0%;
+  }
+  .reviews-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  .reviews-section h2 {
+    display: inline;
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #e91e63;
+  }
+  .review {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  .review:hover {
+    transform: translateY(-5px);
+  }
+  .review img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  .reviewer-name {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  .reviewer-rating {
+    color: #fbc02d;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .review-text {
+    color: #666;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .nav-links, .nav-link-btn {
+      flex-direction: column;
+      width: 100%;
+    }
+    .nav-links {
+      margin-top: 10px;
+    }
+    .nav-links a {
+      padding: 10px 0;
+    }
+  }
+  @media (width: 768px) {
+    .reviews-section h2 {
+      grid-column: 1 / -1;
+      height: fit-content;
+    }
+    .review {
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .reviewer-name {
+      font-size: 14px;
+    }
+    .reviewer-rating {
+      font-size: 15px;
+    }
+    .review-text {
+      font-size: 10px;
+    }
+    .reviews-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 10px;
+    }
+  }
+  
+
+  .modal-content {
+    border-radius: 20px !important;
+    padding: 30px !important;
+    background: #ffffff !important;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #d63384;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  form-control {
+    border-radius: 10px;
+  }
+  
+  .btn-login {
+    background-color: #d63384 !important;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #c2186a;
+  }

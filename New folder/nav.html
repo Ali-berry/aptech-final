@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Her-Glow Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffe4e6;
+  }
+
+  .navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-brand span {
+    color: #ec4899;
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    font-weight: bold;
+  }
+
+  .nav-link {
+    color: #555 !important;
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  .nav-link:hover {
+    color: #ec4899 !important;
+  }
+
+  .book-btn {
+    background-color: #ec4899;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    transition: background 0.3s;
+  }
+
+  .book-btn:hover {
+    background-color: #ea3486;
+    color: white;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .dropdown-menu {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+</style>
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-md py-3">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="https://img.icons8.com/color/48/spa.png" alt="Logo" height="40" class="me-2">
+        <span>Her-Glow</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-md-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+              <li><a class="dropdown-item" href="cream.html">Most Demanding</a></li>
+              <li><a class="dropdown-item" href="organic products.html">Organic Products</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item ms-md-3 mt-2 mt-md-0">
+            <a href="#" class="book-btn d-inline-block">Book Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

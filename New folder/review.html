@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beauty Care Reviews</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #fff8f8;
+      margin: 0;
+      padding: 20px;
+    }
+    .reviews-section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .reviews-section h2 {
+      grid-column: 1 / -1;
+      text-align: center;
+      color: #e91e63;
+      margin-bottom: 40px;
+    }
+    .review {
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .review:hover {
+      transform: translateY(-5px);
+    }
+    .review img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .reviewer-name {
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+    .reviewer-rating {
+      color: #fbc02d;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    .review-text {
+      color: #666;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="reviews-section">
+  <h2>What Our Customers Say</h2>
+
+  <div class="review">
+    <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Sophia L.">
+    <div class="reviewer-name">Sophia L.</div>
+    <div class="reviewer-rating">★★★★★</div>
+    <div class="review-text">
+      "Absolutely love the skincare products! My skin feels so much healthier and glowing. Highly recommend!"
+    </div>
+  </div>
+
+  <div class="review">
+    <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Emma W.">
+    <div class="reviewer-name">Emma W.</div>
+    <div class="reviewer-rating">★★★★☆</div>
+    <div class="review-text">
+      "Great quality and fast delivery. The face serum has made a noticeable difference in my skin texture."
+    </div>
+  </div>
+
+  <div class="review">
+    <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Olivia R.">
+    <div class="reviewer-name">Olivia R.</div>
+    <div class="reviewer-rating">★★★★★</div>
+    <div class="review-text">
+      "Fantastic customer service and amazing products. I’ve found my go-to beauty care brand!"
+    </div>
+  </div>
+
+  <div class="review">
+    <img src="https://randomuser.me/api/portraits/women/4.jpg" alt="Isabella K.">
+    <div class="reviewer-name">Isabella K.</div>
+    <div class="reviewer-rating">★★★★★</div>
+    <div class="review-text">
+      "The moisturizer works wonders on dry skin. My face feels soft and refreshed every morning!"
+    </div>
+  </div>
+
+  <div class="review">
+    <img src="https://randomuser.me/api/portraits/women/5.jpg" alt="Mia T.">
+    <div class="reviewer-name">Mia T.</div>
+    <div class="reviewer-rating">★★★★☆</div>
+    <div class="review-text">
+      "Lovely packaging and gentle products. I have sensitive skin and it suits me perfectly."
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
